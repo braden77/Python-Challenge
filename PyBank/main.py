@@ -3,7 +3,7 @@ import os
 import csv
 
 # Specifiy the file to read
-budget_data_path = os.path.join('C:/','Users/','Administrator/','Documents/','GitHub/','python-challenge/','PyBank/','Resources/','budget_data.csv')
+budget_data_path = os.path.join('Resources/','budget_data.csv')
 
 # Create new lists to save the data
 date=[]
@@ -47,7 +47,7 @@ print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_incre
 print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
 
 # Specify the route for output file
-output_file = os.path.join('C:/','Users/','Administrator/','Documents/','GitHub/','python-challenge/','PyBank/','analysis/',"budget_data_output.csv")
+output_file = os.path.join('analysis/',"budget_data_output.csv")
 
 # Write results to output file
 with open(output_file, "w", newline='') as datafile:
