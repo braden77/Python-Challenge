@@ -4,7 +4,7 @@ import csv
 import operator
 
 # Specify the file to read and create lists to save data
-election_data_path = os.path.join('C:/','Users/','Administrator/','Documents/','GitHub/','python-challenge/','PyPoll/','Resources/', 'election_data.csv')
+election_data_path = os.path.join('Resources/', 'election_data.csv')
 voter_id=[]
 candidate=[]
 different_candidate=[]
@@ -56,7 +56,7 @@ print(f"Winnder: {max(candidate_votes.items(), key=operator.itemgetter(1))[0]}")
 print("-------------------------")
 
 # Output results to a new file
-output_file = os.path.join('C:/','Users/','Administrator/','Documents/','GitHub/','python-challenge/','PyPoll/','analysis/',"election_data_output.csv")
+output_file = os.path.join('analysis/',"election_data_output.csv")
 with open(output_file, "w", newline='') as datafile:
     writer = csv.writer(datafile)
     writer.writerow(["Election Results"])
